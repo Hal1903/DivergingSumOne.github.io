@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start", 
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -26,13 +26,14 @@
   "bugs": {
     "url": "https://github.com/Hal1903/Hal1903.github.io/issues"
   },
-  "homepage": "https://github.com/Hal1903/Hal1903.github.io#readme",
+  "homepage": "https://Hal1903.github.io",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.7.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "live-server": "^1.2.2"
   }
 }
