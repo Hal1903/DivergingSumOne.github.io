@@ -1,46 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Courses from './pages/Courses';
 import './App.css';
+import MarkdownArticle from './pages/MarkdownArticle';
+import ArticleList from './pages/ArticleList';
+
+
+// import Linear from './pages/course/Linear';
+// import ML from './pages/course/ML';
+// import LinearArticle1 from './pages/course/linear/Article1';
+// import MLArticle1 from './pages/course/rl/Article2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="navbar">
-        <h1>My Portfolio</h1>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <main className="content">
-        <section id="about">
-          <h2>About Me</h2>
-          <p>Hello! I'm a developer interested in math, computer science, and AI.</p>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <p>Coming soon...</p>
-        </section>
-      </main>
-
-      <footer className="footer">
-        <section id="contact">
-          <h2>Contact</h2>
-          <ul>
-            <li>Email: example@email.com</li>
-            <li>GitHub: <a href="https://github.com/Hal1903">Hal1903</a></li>
-            {/* <li>Twitter: <a href="https://twitter.com/">@username</a></li> */}
-          </ul>
-        </section>
-
-        <section className="comments">
-          <h2>Comments</h2>
-          <p>(You can embed a comment widget here later)</p>
-        </section>
-      </footer>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/course" element={<Courses />} />
+        <Route path="/course/:topic/:articleId" element={<MarkdownArticle />} />
+        <Route path="/course/:topic" element={<ArticleList />} />
+      </Routes>
+    </Router>
   );
 }
 
