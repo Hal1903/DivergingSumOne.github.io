@@ -27,7 +27,6 @@ function Home() {
           <br></br>
           Here is my journey of academic and engineering landscapes:
           </p>
-
         </section>
 
         <section id="projects">
