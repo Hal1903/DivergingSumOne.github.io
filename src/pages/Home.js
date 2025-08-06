@@ -12,7 +12,7 @@ function Home() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <Link to="/#/course">Resources</Link>
+          <Link to="/course">Resources</Link>
         </nav>
       </header>
 
