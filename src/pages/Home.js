@@ -13,7 +13,6 @@ function Home() {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
           <Link to="/course">Resources</Link>
-          {/* <a href="/course">Resources</a> */}
         </nav>
       </header>
 
