@@ -20,9 +20,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/course" element={<Courses />} />
-        <Route path="/course/:topic/:articleId" element={<MarkdownArticle />} />
-        <Route path="/course/:topic" element={<ArticleList />} />
+        <Route path="/#/course" element={<Courses />} />
+        <Route path="/#/course/:topic/:articleId" element={<MarkdownArticle />} />
+        <Route path="/#/course/:topic" element={<ArticleList />} />
       </Routes>
     </Router>
   );
