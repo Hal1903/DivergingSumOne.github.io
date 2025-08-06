@@ -10,7 +10,8 @@ function Home() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="/course">Resources</a>
+          <Link to="/course">Resources</Link>
+          {/* <a href="/course">Resources</a> */}
         </nav>
       </header>
 
