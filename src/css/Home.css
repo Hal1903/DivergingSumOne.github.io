@@ -40,18 +40,54 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
-  .about-text, .about-slideshow {
+  .about-text {
+    order: 1; /* Move text below slideshow on mobile */
     flex: 1 1 100%;
     max-width: 100%;
     text-align: center;
   }
 
+  .about-slideshow {
+    order: -1; /* Move slideshow to the top on mobile */
+    flex: 1 1 100%;
+  }
+
   .about-text p {
     padding: 0 1rem;
     margin-bottom: 1vh;
-    
   }
+
+    .navbar {
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* background-color: white; or your theme color */
+    }
+
+    .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    }
+
+    .navbar a, .navbar a:visited {
+    text-decoration: none;
+    color: black;
+    }
+
+    /* Make sure html/body/root have no unintended margin */
+    body, html, #root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
 }
