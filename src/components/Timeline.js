@@ -1,0 +1,92 @@
+import React from "react";
+import {Chrono} from "react-chrono";
+
+export default function Timeline() {
+  const items = [
+    { title: "2022", cardTitle: "2022 Highlights" },
+    { title: "2023", cardTitle: "2023 Highlights" },
+    { title: "2024", cardTitle: "2024 Highlights" },
+    { title: "2025", cardTitle: "2025 Highlights" },
+    { title: "2026", cardTitle: "2026 Highlights" },
+  ];
+
+  return (
+    <div style={{ width: "70%", height: "500px", margin: "0 auto" }}>
+      <Chrono mode="HORIZONTAL" items={items}
+        scrollable 
+        disableToolbar={true}
+        cardHeight={256}
+        cardWidth={256}
+        slideShow={false}
+        showAllCardsHorizontal = {true}
+        theme={{
+          primary: "black",
+          secondary: "white",
+        //   cardBgColor: "white",
+        //   cardForeColor: "black",
+          titleColor: "black"
+        }}
+      >
+        <div>
+          <ul>
+            <li>Passed AP Calculus BC with 2 months</li>
+            <li>Intern at FPI</li>
+            <li>Started undergraduate studies in CS and MA at UKY</li>
+            <li>Started competitive programming and TA in Calc II and JPN's</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Elected Treasurer of Japanese Culture in Kentucky Society</li>
+            <li>Assistant teacher at Central Kentucky Japanese School</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Completed GCI (DS + Analytics) from UofTokyo</li>
+            <li>Started research on PINN and blogs</li>
+            <li>MathLab seminar on Chipfiring at UKY</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Completed REU at WPI</li>
+            <li>Paper accepted by IEEE NAECON</li>
+            <li>Finished B.S. in CS and Math</li>
+            <li>Experimental math curriculum begins</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Planning some internship</li>
+            <li>Graduation from UKY</li>
+            <li>More is coming soon...</li>
+          </ul>
+        </div>
+      </Chrono>
+    </div>
+  );
+}
+
+
+// export default function HorizontalTimeline() {
+//     return (
+//         // omit the headers
+//         <div style={{ width: "60%", height: "auto", margin: "0 auto", }}>
+//             <Chrono 
+//             items={items} 
+//             mode="HORIZONTAL" 
+//             scrollable 
+//             disableToolbar={true}
+//             cardHeight={128}
+//             cardWidth={256}
+//             slideShow={false}
+//             showAllCardsHorizontal = {true}
+//             >
+//             <div>
+                
+//             </div>
+//             </Chrono>
+//         </div>
+//     );
+// };

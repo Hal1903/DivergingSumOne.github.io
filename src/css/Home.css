@@ -1,0 +1,57 @@
+/* body, html, #root {
+  font-family: 'Noto Serif', serif;
+} */
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.about-text p {
+    margin-bottom: 1vh;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.about-slideshow {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 👇 Mobile: stack columns vertically */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-text, .about-slideshow {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-text p {
+    padding: 0 1rem;
+    margin-bottom: 1vh;
+    
+  }
+}

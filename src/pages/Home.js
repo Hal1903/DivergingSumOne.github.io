@@ -1,7 +1,13 @@
 import React from 'react';
 import '../css/Home.css';
 import { Link } from 'react-router-dom';
-
+import AboutSlideshow from '../components/Slideshow'; // Adjust the import path as necessary
+import HorizontalTimeline from '../components/Timeline';
+// import { Timeline } from "flowbite-react";
+/*
+TODO: mobile responsive design
+TODO: add a comment widget
+*/
 
 function Home() {
   return (
@@ -16,19 +22,32 @@ function Home() {
         </nav>
       </header>
 
-      <main className="content">
-        <section id="about">
-          <h2>About Me</h2>
-          <p>
-          Welcome to my website. I'm an undergraduate researcher and developer interested in math, computer science, and education.
-          <br></br>
-          I enjoy exploring the intersection of these fields and sharing my knowledge through various projects. 
-          <br></br>
-          My goal is not only to make complex topics accessible and engaging for everyone but also to foster academic curiosity and enjoyment in learning.
-          If you are curious about these fields, feel free to explore the Projects and Resources section containing articles on mathematics and computer science.
-          <br></br>
-          Here is my journey of academic and engineering landscapes:
-          </p>
+        <main className="content">
+          <section id="about" className="about-container">
+            {/* Left column: Text */}
+            <div className="about-text">
+              <h2>About Me</h2>
+              <p>
+                Welcome! I'm Haruku, an undergraduate researcher and developer interested in math, computer science, and education at University of Kentucky.
+              </p>
+              <p>
+                My goals are to foster academic curiosity and enjoyment in learning and to earn a PhD in computer science.
+              </p>
+              <p>
+                Here is my journey of academic and engineering landscapes:
+              </p>
+            </div>
+
+            {/* Right column: Slideshow */}
+            <div className="about-slideshow">
+              <AboutSlideshow /> {/* edit src/component to add images */}
+            </div>
+
+        </section>
+
+        <section className="timeline-section">
+          <h2>Timeline</h2> 
+          <HorizontalTimeline />  
         </section>
 
         <section id="projects">
@@ -41,7 +60,7 @@ function Home() {
         <section id="contact">
           <h2>Contact</h2>
           <ul>
-            <li>Email: divergingsumone@gmail.com</li>
+            <li>Email: hahikeyuaono0419@gmail.com</li>
             <li>GitHub: <a href="https://github.com/Hal1903">Hal1903</a></li>
           </ul>
         </section>
