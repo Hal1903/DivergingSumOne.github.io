@@ -1,0 +1,13 @@
+.timeline-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Prevents timeline from exceeding page width */
+  margin: 0 auto;     /* Centers the timeline */
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

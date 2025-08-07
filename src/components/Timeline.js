@@ -1,5 +1,6 @@
 import React from "react";
 import {Chrono} from "react-chrono";
+import "../css/Timeline.css";
 
 export default function Timeline() {
   const items = [
@@ -11,59 +12,61 @@ export default function Timeline() {
   ];
 
   return (
-    <div style={{ width: "70%", height: "500px", margin: "0 auto" }}>
-      <Chrono mode="HORIZONTAL" items={items}
-        scrollable 
-        disableToolbar={true}
-        cardHeight={256}
-        cardWidth={256}
-        slideShow={false}
-        showAllCardsHorizontal = {true}
-        theme={{
-          primary: "black",
-          secondary: "white",
-        //   cardBgColor: "white",
-        //   cardForeColor: "black",
-          titleColor: "black"
-        }}
-      >
-        <div>
-          <ul>
-            <li>Passed AP Calculus BC with 2 months</li>
-            <li>Intern at FPI</li>
-            <li>Started undergraduate studies in CS and MA at UKY</li>
-            <li>Started competitive programming and TA in Calc II and JPN's</li>
-          </ul>
+    <div  className="timeline-wrapper">
+        <div style={{ minWidth: "600px", width: "max-content", height: "500px" }}>
+        <Chrono mode="HORIZONTAL" items={items}
+            scrollable 
+            disableToolbar={true}
+            cardHeight={256}
+            cardWidth={256}
+            slideShow={false}
+            showAllCardsHorizontal = {true}
+            theme={{
+            primary: "black",
+            secondary: null,
+            //   cardBgColor: "white",
+            //   cardForeColor: "black",
+            titleColor: "black"
+            }}
+        >
+            <div>
+            <ul>
+                <li>Passed AP Calculus BC with 2 months</li>
+                <li>Intern at FPI</li>
+                <li>Started undergraduate studies in CS and MA at UKY</li>
+                <li>Started competitive programming and TA in Calc II and JPN's</li>
+            </ul>
+            </div>
+            <div>
+            <ul>
+                <li>Elected Treasurer of Japanese Culture in Kentucky Society</li>
+                <li>Assistant teacher at Central Kentucky Japanese School</li>
+            </ul>
+            </div>
+            <div>
+            <ul>
+                <li>Completed GCI (DS + Analytics) from UofTokyo</li>
+                <li>Started research on PINN and blogs</li>
+                <li>MathLab seminar on Chipfiring at UKY</li>
+            </ul>
+            </div>
+            <div>
+            <ul>
+                <li>Completed REU at WPI</li>
+                <li>Paper accepted by IEEE NAECON</li>
+                <li>Finished B.S. in CS and Math</li>
+                <li>Experimental math curriculum begins</li>
+            </ul>
+            </div>
+            <div>
+            <ul>
+                <li>Planning some internship</li>
+                <li>Graduation from UKY</li>
+                <li>More is coming soon...</li>
+            </ul>
+            </div>
+        </Chrono>
         </div>
-        <div>
-          <ul>
-            <li>Elected Treasurer of Japanese Culture in Kentucky Society</li>
-            <li>Assistant teacher at Central Kentucky Japanese School</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>Completed GCI (DS + Analytics) from UofTokyo</li>
-            <li>Started research on PINN and blogs</li>
-            <li>MathLab seminar on Chipfiring at UKY</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>Completed REU at WPI</li>
-            <li>Paper accepted by IEEE NAECON</li>
-            <li>Finished B.S. in CS and Math</li>
-            <li>Experimental math curriculum begins</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>Planning some internship</li>
-            <li>Graduation from UKY</li>
-            <li>More is coming soon...</li>
-          </ul>
-        </div>
-      </Chrono>
     </div>
   );
 }
