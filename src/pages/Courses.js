@@ -6,19 +6,25 @@ const courses = [
   {
     id: 'elementary_math',
     title: 'Elementary Mathematics',
-    description: 'Expose yourself to advanced topics and abstraction in arithmetics, number theory, graph theory, and algorithms.',
+    description: 'Exposure to advanced topics and abstraction in arithmetics, number theory, graph theory, and algorithms.',
     image: '../images/Courses/math1.png',
+  },
+  {
+    id: 'discrete',
+    title: 'Introduction to Discrete Math',
+    description: 'Introduction to discrete mathematics.',
+    image: '../images/Courses/discrete.png',
   },
   {
     id: 'linear',
     title: 'Linear Algebra',
-    description: 'Understand linear algebra to build a strong foundation for ML and various other fields of mathematics.',
+    description: 'Introduction to linear algebra to build a strong foundation for ML and various other fields of mathematics.',
     image: '../images/Courses/linear.png',
   },
   {
     id: 'ml1',
     title: 'Introduction to Machine Learning',
-    description: 'Introduction to machine learning with mathematical backgrounds and Python programs.',
+    description: 'Example-based machine learning with mathematical backgrounds and Python programs.',
     image: '../images/Courses/ml1.png',
   },
 ];

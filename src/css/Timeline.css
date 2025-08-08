@@ -1,6 +1,6 @@
 .timeline-wrapper {
   width: 100%;
-  max-width: 1200px; /* Prevents timeline from exceeding page width */
+  max-width: 1150px; /* Prevents timeline from exceeding page width */
   margin: 0 auto;     /* Centers the timeline */
   overflow-x: auto;
   overflow-y: hidden;
