@@ -37,6 +37,8 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.1",
     "react-social-icons": "^6.24.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1",
     "web-vitals": "^5.1.0"
   },
   "devDependencies": {
